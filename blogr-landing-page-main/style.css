@@ -358,7 +358,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         font-family: "Ubuntu", sans-serif;
-        overflow: hidden;
+        overflow: scroll;
         /*   font-family: "Overpass", sans-serif; */
     }
     .desktop-screen {
