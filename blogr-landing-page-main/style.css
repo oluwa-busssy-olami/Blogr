@@ -392,7 +392,7 @@ footer {
         justify-content: center;
         max-width: 100%;
         flex-direction: column;
-        margin: 50px 20px 0;
+        /* margin: 50px 20px 0; */
     }
     .main-container h2 {
         color: var(--Verydarkblue);
@@ -416,8 +416,9 @@ footer {
     }
     .second-main-container {
         position: relative;
-        background-position: -270px -580px;
+        /* background-position: -270px -580px; */
         margin-top: 80px;
+        width: fit-content;
         padding: 30px 20px;
         border-top-right-radius: 20%;
         border-bottom-left-radius: 20%;
