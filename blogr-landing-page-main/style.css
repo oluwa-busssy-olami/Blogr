@@ -395,8 +395,13 @@ footer {
     padding: 20px;
     align-items: center;
     justify-content: center;
-    /* width: 100%; */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    position: static;
+    z-index: 999;
+    top: 120px;
+    right: 0;
     flex-direction: column;
+    cursor: pointer;
     display: none;
     background-color: whitesmoke;
     border-radius: 7px;
@@ -408,13 +413,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 100%; */
+    /* border-bottom: 1px solid var(--Grayishblue); */
   }
   .mobile-select-item:last-child {
     padding-bottom: 20px;
-    border-bottom: 2px solid var(--Grayishblue);
+    /* width: 100%;
+    border-bottom: 2px solid var(--Grayishblue); */
   }
   .up {
-    color: var(--Lightred);
+    background-image: var(--Lightred);
+    background-color: transparent;
   }
   .dropdown {
     background-color: hsl(240, 4%, 90%);
@@ -434,17 +443,19 @@ footer {
   .drop-title {
     color: hsla(207, 51%, 23%, 0.841);
     font-family: "Overpass", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 600;
     margin-bottom: 20px;
     cursor: pointer;
+  }
+  .drop-main-head {
+    margin-top: 20px;
   }
   /* Moble-btn */
   .mobile-btn {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    border-top: 1px solid var(--Grayishblue);
   }
   .mobile-login {
     color: hsla(207, 51%, 23%, 0.841);
@@ -455,12 +466,22 @@ footer {
     border: none;
     outline: none;
   }
+  .close {
+    display: none;
+  }
   .mobile-signUp {
     border: none;
     padding: 10px 25px;
     border-radius: 20px;
     color: var(--White);
+    /* width: 50%; */
     background-color: var(--Lightred);
+  }
+  .header-content {
+    margin-top: 20px;
+  }
+  .header-content h1 {
+    padding-top: 20px;
   }
   /* Main-container */
   .main-container {
@@ -469,10 +490,16 @@ footer {
     justify-content: center;
     max-width: 100%;
     flex-direction: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .main-container::-webkit-scrollbar {
+    display: none;
   }
   .second-main-container,
   .third-container {
     flex-direction: column;
+    transition-delay: 5s;
   }
   .main-container h2 {
     color: var(--Verydarkblue);
