@@ -37,7 +37,7 @@ for (let i = 0; i < titleHead.length; i++) {
       headTitle.innerText = item.innerText;
 
       // Hide the dropDownList after an item is clicked
-      dropDownList.style.display = "block";
+      dropDownList.style.display = "none";
     });
   });
   headTitle.addEventListener("click", (e) => {
@@ -52,3 +52,23 @@ for (let i = 0; i < titleHead.length; i++) {
 }
 hideIcon.addEventListener("click", hideIconToClose);
 openIcon.addEventListener("click", openIconToSelect);
+
+// desktop screen
+const desktopSelect = document.querySelectorAll(".desktop-nav-title");
+const desktopDropDown = document.querySelectorAll(".destop-drop-down");
+
+for (let i = 0; i < desktopSelect.length; i++) {
+  const desktopSelectTitle = desktopSelect[i];
+  const desktopSelectList = desktopDropDown[i];
+
+  // console.log(desktopSelectList);
+  desktopSelectTitle.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (desktopSelectList.style.display === "block") {
+      console.log("clicked");
+      desktopSelectList.style.display = "none";
+    } else {
+      desktopSelectList.style.display = "block";
+    }
+  });
+}

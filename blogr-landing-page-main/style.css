@@ -58,7 +58,7 @@ header {
   background-position: center center;
   background-color: var(--Verylightred);
   border-bottom-left-radius: 100px;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
@@ -104,21 +104,14 @@ header {
   padding-left: 10px;
 }
 
-.desktop-select-item a {
-  color: #ebdede;
-  cursor: pointer;
-  font-size: 0.9rem;
-  /* text-decoration: underline; */
-}
-
-.desktop-select-item a:hover {
+.desktop-title:hover {
   text-decoration: underline;
   color: var(--White);
 }
 
 /* dropdown */
 
-.dropdown {
+.-desktop-drop-down {
   margin-top: 15px;
   background-color: var(--White);
   padding: 20px 35px 10px 15px;
@@ -128,22 +121,38 @@ header {
 }
 
 .destop-drop-down {
-  display: none;
+  display: block;
+  margin-top: 10px;
+  background-color: var(--White);
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px 50px 10px 10px;
+  border-radius: 10px;
+  position: fixed;
 }
 
-.dropdown a {
-  color: var(--Verydarkblackblue);
+.desktop-title {
+  margin-bottom: 15px;
+}
+
+.desktop-title {
+  color: var(--Grayishblue);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.destop-drop-down a {
+  color: hsl(240, 2%, 49%);
   font-weight: 300;
   font-size: 0.8rem;
   cursor: pointer;
 }
 
-.dropdown a:hover {
+.destop-drop-down a:hover {
   font-weight: 600;
-  color: var(--Verydarkblackblue);
+  color: var(--Verydarkdesaturatedblue);
 }
 
-.dropdown li {
+.destop-drop-down li {
   margin-bottom: 10px;
 }
 
@@ -403,7 +412,7 @@ footer {
     justify-content: center;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 90%;
+    width: 100%;
     z-index: 1000;
     top: 100px;
     right: 0;
@@ -458,6 +467,10 @@ footer {
     color: hsl(240, 14%, 56%);
     font-weight: 600;
     font-size: 1rem;
+    /* margin-bottom: 40px; */
+  }
+  .dropdown li {
+    margin-bottom: 10px;
   }
   .drop-title {
     color: hsla(207, 51%, 23%, 0.841);
