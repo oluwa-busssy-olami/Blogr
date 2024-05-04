@@ -27,6 +27,19 @@ function hideIconToClose() {
 for (let i = 0; i < titleHead.length; i++) {
   const headTitle = titleHead[i];
   const dropDownList = dropDown[i];
+
+  //
+  dropDownList.querySelectorAll("a").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      // Update the innerText of headTitle to the clicked item's text
+      headTitle.innerText = item.innerText;
+
+      // Hide the dropDownList after an item is clicked
+      dropDownList.style.display = "block";
+    });
+  });
   headTitle.addEventListener("click", (e) => {
     // e.preventDefault();
 

@@ -403,7 +403,7 @@ footer {
     justify-content: center;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 300px;
+    width: 90%;
     z-index: 1000;
     top: 100px;
     right: 0;
@@ -473,6 +473,8 @@ footer {
   /* Moble-btn */
   .mobile-btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-top: 40px;
   }
@@ -490,7 +492,7 @@ footer {
   }
   .mobile-signUp {
     border: none;
-    padding: 10px 25px;
+    padding: 10px 30px;
     border-radius: 20px;
     color: var(--White);
     /* width: 50%; */
@@ -551,7 +553,7 @@ footer {
   }
   .second-image {
     position: absolute;
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
     top: 120px;
   }
   .second-content {
