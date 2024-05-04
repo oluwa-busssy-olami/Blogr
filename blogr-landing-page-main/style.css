@@ -54,10 +54,10 @@ body {
 header {
   width: 100%;
   background-image: url(images/bg-pattern-intro-desktop.svg);
-  background-size: cover;
-  background-position: center;
+  background-size: 1800px;
+  background-position: center center;
   background-color: var(--Verylightred);
-  border-bottom-left-radius: 70px;
+  border-bottom-left-radius: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -259,13 +259,14 @@ header {
   background-color: hsl(240, 22%, 27%);
   background-position: -200px -400px;
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 180px 50px 60px;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
+  position: relative;
 }
 
 .second-content {
@@ -287,6 +288,11 @@ header {
 
 .second-image {
   width: 100%;
+}
+
+.second-image img {
+  position: absolute;
+  top: -250px;
 }
 
 /* Third section */
@@ -406,15 +412,19 @@ footer {
     display: none;
     background-color: whitesmoke;
     border-radius: 7px;
-    transform: translateX(-10%);
-    transition: transform 0.4s ease;
   }
-  .mobile-selected-item.active {
+  .show {
+    display: block;
+  }
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+  /* .mobile-selected-item.active {
     transform: translateY(0);
   }
   .mobile-selected-item.active .close {
     display: block;
-  }
+  } */
   .mobile-selected-item li {
     text-align: center;
   }
@@ -436,7 +446,7 @@ footer {
   }
   .dropdown {
     background-color: hsl(240, 4%, 90%);
-    padding: 20px 100px;
+    padding: 20px 80px;
     width: 100%;
     font-size: 1rem;
     font-weight: 600;
@@ -541,8 +551,8 @@ footer {
   }
   .second-image {
     position: absolute;
-    width: calc(100% - 80px);
-    top: -100px;
+    width: calc(100% - 40px);
+    top: 120px;
   }
   .second-content {
     text-align: center;

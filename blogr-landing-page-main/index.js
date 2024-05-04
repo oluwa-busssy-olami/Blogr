@@ -27,7 +27,15 @@ function hideIconToClose() {
 for (let i = 0; i < titleHead.length; i++) {
   const headTitle = titleHead[i];
   const dropDownList = dropDown[i];
-}
+  headTitle.addEventListener("click", (e) => {
+    // e.preventDefault();
 
+    if (dropDownList.style.display === "block") {
+      dropDownList.style.display = "none";
+    } else {
+      dropDownList.style.display = "block";
+    }
+  });
+}
 hideIcon.addEventListener("click", hideIconToClose);
 openIcon.addEventListener("click", openIconToSelect);
